@@ -33,10 +33,11 @@ module.exports = {
   resolve: {
     modules: [
       "node_modules",
-      path.resolve(__dirname, "app")
+      path.resolve(__dirname, "./app/components")
     ],
     alias: {
-      "applicationStyles": path.resolve(__dirname, 'app/styles/app.scss')
+      "applicationStyles": path.resolve(__dirname, 'app/styles/app.scss'),
+      //components are no longer required given that ./app/compnents route is in resolve.modules
     },
     extensions: ['.js', '.jsx']
   },
