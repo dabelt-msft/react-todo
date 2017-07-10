@@ -2,8 +2,11 @@ var React = require('react');
 
 var Todo = React.createClass({
   render: function(){
+    var {id, text} = this.props;
     return (
-      <h4>Todo Item</h4>
+      <div>
+        <h4>{id}. {text}</h4>
+      </div>
     )
   }
 })
